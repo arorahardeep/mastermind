@@ -62,6 +62,7 @@ class GameLogic:
 
     def game_loop(self):
         for chance in range(0,self.gc.chances):
+            print()
             print(str(chance + 1) + ": " + self.gc.input_message)
             guess = [str(x) for x in input().split()]
             red, white = self.match(guess)
